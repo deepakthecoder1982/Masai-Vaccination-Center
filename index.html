@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Vaccination</title>
+    <link rel="stylesheet" href="./registeration/registeration.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="./index.html">
+                Masai Vaccination center
+            </a>
+        </div>
+        <div class="link">
+            <li><a href="./vaccinated/vaccinated.html">Vaccinated</a></li>
+            <li><a href="./dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="./index.html">Register</a></li>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Registeration Page</h1>
+        <p>Please Enter Your Details</p>
+        <form action="">
+            <span>Name</span><input type="text" id="name" placeholder="Enter the name">
+            <p id="alert">I am working</p>
+            <span>Age</span><input type="number" id="age" placeholder="Enter the age">
+            <span>Designation</span>
+            <Select id="designation">
+                <option value="">Choose the designation</option>
+                <option value="Employee">Employee</option>
+                <option value="Student">Student</option>
+            </Select>
+            <span>Priority</span>
+            <div class="radio-btn">
+                <label for="p1">p1</label>
+                <input type="radio" name="Priority" value="p1">
+                <label for="p2">p2</label>
+                <input type="radio" name="Priority" value="p2">
+                <label for="p3">p3</label>
+                <input type="radio" name="Priority" value="p3">
+                <label for="p4">p4</label>
+                <input type="radio" name="Priority" value="p3">
+            </div>
+            <span>Vaccine</span>
+            <select id="vaccine">
+                <option value="">Select the vaccine</option>
+                <option value="Covishield">Covishield</option>
+                <option value="Covaxin">Covaxin</option>
+                <option value="Sputnik">Sputnik</option>
+            </select>
+            <input type="submit" id="register" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>
+<script src="./registeration/registeration.js"></script>

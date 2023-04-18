@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Vaccination</title>
+    <link rel="stylesheet" href="../registeration/registeration.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+    <link rel="stylesheet" href="./dashboard.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                Masai Vaccination center
+            </a>
+        </div>
+        <div class="link">
+            <li><a href="../vaccinated/vaccinated.html">Vaccinated</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="../index.html">Register</a></li>
+        </div>
+    </nav>
+
+    <div class="filter">
+        <select id="FilterByVaccine">
+            <option value="">Filter by Vaccine</option>
+            <option value="Covishield">Covishield</option>
+            <option value="Covaxin">Covaxin </option>
+            <option value="Sputnik">Sputnik</option>
+        </select>
+        <select id="FilterByAge">
+            <option value="">Sort by Age</option>
+            <option value="lth">Low to high</option>
+            <option value="htl">High to Low</option>
+        </select>
+        <select id="FilterByPriority">
+            <option value="">Filter by Priority</option>
+            <option value="p0">p0</option>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+        </select>
+
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <th>Sr.no</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>age</th>
+                <th>designation</th>
+                <th>Priority</th>
+                <th>vaccine</th>
+                <th>otp</th>
+                <th>Delete</th>
+                <th>vaccinated</th>
+                <!-- sr,id,name,age,designation,Priority,vaccine,otp,Delete,vaccinated -->
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <div id="otpSection">
+            <div class="content">
+                <h3 id="OtpHeader">Enter Your OTP</h3>
+                <p>NOTE:-Your OTP is of 4 digit on Dashboard</p>
+                <div id="EntOtp">
+                    <input type="number" class="Ent_otp"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="1"  id="1"/>
+                    <input type="number" class="Ent_otp"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="1" id="2"/>
+                    <input type="number" class="Ent_otp"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="1"  id="3"/>
+                    <input type="number" class="Ent_otp"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="1"  id="4"/>
+                </div>
+                <button id="validate" >Vaccinate</button>
+                <button id="close_otp_form">Close</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="./dashboard.js"></script>

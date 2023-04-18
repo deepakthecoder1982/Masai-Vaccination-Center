@@ -1,0 +1,181 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 62.5%;
+        background-color: #f0f1f0;
+        overflow: auto;
+        scroll-behavior: smooth;
+        text-decoration: none;
+        transition-delay: 1s;
+    }
+
+    :root {
+        --fav-color: rgba(243, 4, 49);
+        --blue: dodgerblue;
+        --back-ground-color: linear-gradient(to right, rgba(50, 25, 242, 0.774), rgba(0, 0, 255, 0.53));
+        --font-size: 1.3rem;
+    }
+
+    nav {
+        display: flex;
+        height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0 1rem;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff;
+        margin-bottom: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+
+    nav .logo {
+        font-size: 1.7rem;
+        font-weight: 900;
+        text-transform: capitalize;
+        font-family: 'Brush Script MT', cursive;
+    }
+
+    nav .logo::first-letter {
+        color: var(--fav-color);
+    }
+
+    #navbar a,
+    #navbar .link li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #navbar .link a {
+        color: rgba(32, 34, 31, 0.782);
+        font-weight: bolder;
+    }
+
+    #navbar .link a:hover {
+        text-decoration: underline;
+        color: dodgerblue;
+    }
+
+    #navbar .link a:active {
+        color: var(--fav-color);
+    }
+
+    #navbar .link {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 45%;
+        margin: 3rem auto;
+        padding: 3rem 1rem;
+        background-color: #fff;
+        border-radius: 2vw;
+        background-image: linear-gradient(to right, indigo, dodgerblue);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .container h1,
+    .container p {
+        text-align: center;
+        color: rgba(19, 237, 237, 0.937);
+
+    }
+
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .container p {
+        color: rgba(245, 245, 245, 0.603);
+        font-size: var(--font-size);
+        font-weight: bolder;
+    }
+
+    .container form {
+        width: 80%;
+        height: 100%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .container form>span {
+        color: #f0f1f0;
+        display: block;
+        padding-top: .5rem ;
+        font-size: var(--font-size);
+    }
+
+    .container form select {
+        width: 100%;
+        padding: .5rem .4rem;
+        background-color: rgba(0, 0, 0, 0.715);
+        color: rgba(255, 255, 255, 0.848);
+        border-radius: .5rem;
+        appearance: none;
+    }
+
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .container form input {
+        padding: .5rem .6rem;
+        width: 100%;
+        border-radius: .3rem;
+        background-color: rgba(0, 0, 0, 0.43);
+        border: none;
+        margin: .2rem auto;
+        color: white;
+    }
+
+    .container form label {
+        color: palevioletred;
+    }
+    form .radio-btn{
+        display: flex;
+        width:17vw;
+        margin: auto;
+    }
+    .container form #register {
+        padding: .8rem 1.5rem;
+        border-radius: .4rem;
+        position: relative;
+        display: block;
+        border: none;
+        left: 0%;
+        width: 100%;
+        top: 2vw;
+        background-color: rgba(2, 2, 113, 0.716);
+        color: rgba(255, 255, 255, 0.827);
+        cursor: pointer;
+        letter-spacing: 1px;
+        font-size: .9rem;
+        font-weight: bolder;
+    }
+
+    .container form #register:hover {
+        background-color: rgba(48, 236, 10, 0.591);
+    }
+
+    label {
+        font-size: var(--font-size);
+        padding: .4rem;
+        color: rgba(14, 218, 237, 0.878);
+    }
+    form #alert{
+        color: var(--fav-color);
+        font-size: 1.2rem;
+        display: none;
+        background-color: #c3e7c389;
+        border-radius: .3rem;
+    }
